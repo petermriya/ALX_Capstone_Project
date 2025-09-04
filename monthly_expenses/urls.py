@@ -14,6 +14,7 @@ def home_view(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home_view, name="home"),  # Home page
-    path('accounts/', include('accounts.urls')),  # Accounts app
+    path('accounts/', include('accounts.urls')),
+    path('expenses/', include('expenses.urls')),
+    path('', include('expenses.urls')),
 ]
