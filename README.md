@@ -1,4 +1,5 @@
 Monthly Expense Tracker
+
 This is a simple Django web application that helps users keep track of their monthly expenses. Each user can register for an account, log in, and manage their own expenses without interfering with others. The app is kept intentionally simple and clean, focusing on functionality over design.
 
 Features:
@@ -9,8 +10,7 @@ Features:
 •	Monthly summary view showing total spending
 •	Each user only sees their own expenses
 
-Getting Started
-Prerequisites
+Getting Started Prerequisites
 • Python 3 installed on your machine
 • Virtual environment recommended
 Installation
