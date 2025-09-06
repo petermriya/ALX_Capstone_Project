@@ -1,15 +1,13 @@
 <h1>Expense List</h1>
 
-<p>
-    <a href="{% url 'add_expense' %}">Add New Expense</a> |
-    <a href="{% url 'monthly_summary' %}">View Monthly Summary</a> |
-    <a href="{% url 'logout' %}">Logout</a>
-</p>
+<a href="{% url 'add_expense' %}">Add New Expense</a> | 
+<a href="{% url 'monthly_summary' %}">View Monthly Summary</a> | 
+<a href="{% url 'logout' %}">Logout</a>
 
 <ul>
     {% for expense in expenses %}
         <li>
-            <strong>{{ expense.category }}</strong> - {{ expense.amount }} ({{ expense.date }})
+            <strong>{{ expense.title }}</strong> - {{ expense.amount }} ({{ expense.date }})
             <a href="{% url 'delete_expense' expense.pk %}">Delete</a>
         </li>
     {% empty %}
