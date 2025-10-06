@@ -1,12 +1,11 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>Monthly Summary</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
     <h1>Monthly Expense Summary</h1>
     <p>Total expenses for this month: <strong>{{ total }}</strong></p>
 
-    <p><a href="{% url 'expense_list' %}">Back to Expenses</a></p>
-</body>
-</html>
+    <p>
+        <a href="{% url 'expense_list' %}">Back to Expenses</a>
+    </p>
+{% endblock %}
+
